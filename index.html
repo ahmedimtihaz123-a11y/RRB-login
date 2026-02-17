@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+
+<h2>Login</h2>
+
+<input type="text" id="user" placeholder="Username"><br><br>
+<input type="password" id="pass" placeholder="Password"><br><br>
+
+<button onclick="checkLogin()">Login</button>
+
+<script>
+function checkLogin(){
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if(u=="myuser" && p=="mypassword"){
+    window.location="file.pdf";
+  } else {
+    alert("Wrong username or password");
+  }
+}
+</script>
+
+</body>
+</html>
